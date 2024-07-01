@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>车质网投诉信息</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.0.css">
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+
+    <script src="js/echarts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts-wordcloud@1.1.1/dist/echarts-wordcloud.min.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header">
+            <h1>车质网投诉信息</h1>
+            <p>(2023年6月至12月)</p>
+        </div>
+    </header>
+    <div class="data_content">
+        <!--左边-->
+        <div class="data_left fl">
+            <div class="left_top">
+                <!--/*左边第一部分*/-->
+                <div class="info public">
+                    <div class="min-title">
+                        <span>投诉车辆</span>
+                    </div>
+                    <div id="echart_1" style="width:100%;height: 100%;"></div>
+                    <div class="boxfoot"></div>
+                </div>
+                <!--左边第二部分-->
+                <div class="top_bottom public">
+                    <div class="min-title">
+                        <span>问题类型</span>
+                    </div>
+                    <div id="echarts_2" style="width:100%;height: 100%;"></div>
+                    <div class="boxfoot"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="data_c fl">
+            <div class="data_c_1">
+                <div id="contPar" class="contPar">
+                    <div id="page1" style="z-index:1">
+                        <div id="drag-container" style="z-index: 1">
+                            <div id="spin-container">
+
+                                <img alt="" class="infoBtn" src="picture/page1_0.png">
+                                <img alt="" class="" src="picture/page1_1.png">
+                                <img alt="" class="" src="picture/page1_2.png">
+                                <img alt="" class="" src="picture/page1_1.png">
+                                <img alt="" class="" src="picture/page1_2.png">
+                            </div>
+                            <div id="ground"></div>
+                        </div>
+
+                        <img alt="" class="img3 png" src="images/newdz.png">
+                    </div>
+                </div>
+            </div>
+            <div class="data_c_2 public">
+
+                <div id="echarts_4" style="width: 100%;height: 100%;padding-top: 10px;"></div>
+                <div class="boxfoot"></div>
+            </div>
+        </div>
+
+        <!--右边-->
+        <div class="data_right fr">
+            <div class="right_top">
+                <div class="right_info public">
+                    <div class="min-title">
+                        <span>投诉状态</span>
+                    </div>
+                    <div id="echarts_5" style="width:100%;height: 100%;padding-top: 10px;"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="right_bottom public">
+                    <div class="min-title">
+                        <span>车辆类型</span>
+                    </div>
+                    <div id="echarts_6" style="width:100%;height: 100%;padding-top: 10px;"></div>
+                    <div class="boxfoot"></div>
+                </div>
+                <div class="right_bottom public">
+                    <div class="min-title">
+                        <span>投诉词频</span>
+                    </div>
+                    <div id="echarts_7" style="width:100%;height: 100%;padding-top: 10px;"></div>
+                    <div class="boxfoot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+</body>
+<script src="js/script.js"></script>
+
+</html>
